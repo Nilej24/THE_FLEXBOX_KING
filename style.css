@@ -1,13 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
+* {
+
+	margin: 0;
+	padding: 0;
+
+}
+
 body {
 
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
 }
 
-.header, .hero, .footer {
+.hero,
+.info-section,
+.quote-section,
+.action-section {
+
+	flex: 1 1 0;
+
+}
+
+.header,
+.hero,
+.info-section,
+.quote-section,
+.action-section,
+.footer {
+
+	padding: 0 100px;
+
+}
+
+.header,
+.hero,
+.footer {
 
 	background-color: #1f2937;
 	font-size: 18px;
@@ -15,18 +48,31 @@ body {
 
 }
 
-.header-logo, .sign-up {
+.header-logo,
+.sign-up {
 
 	font-size: 24px;
+	font-weight: bold;
 	color: #f9faf8;
+
+}
+
+.header {
+
+	display: flex;
+	justify-content: space-between;
+
+	padding-top: 15px;
+	padding-bottom: 15px;
 
 }
 
 .header ul {
 
 	list-style: none;
-	margin: 0;
-	padding: 0;
+
+	display: flex;
+	gap: 15px;
 
 }
 
@@ -46,7 +92,8 @@ body {
 
 }
 
-.sign-up, .action {
+.sign-up,
+.action {
 
 	background-color: #3882f6;
 
@@ -75,6 +122,14 @@ body {
 
 }
 
+.action-section {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
 .action h2 {
 
 	font-size: 24px;
@@ -87,5 +142,14 @@ body {
 
 	font-size: 18px;
 	color: #e5e7eb;
+
+}
+
+.footer {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
 
 }
