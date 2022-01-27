@@ -132,11 +132,50 @@ button,
 
 }
 
+.info-section {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+
+}
+
 .info-section h2 {
 
 	font-size: 36px;
 	font-weight: bolder;
 	color: #1f2937;
+
+	margin-bottom: 20px;
+
+}
+
+.info-container {
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 15px;
+
+}
+
+.info {
+
+	flex: 0 0 auto;
+	text-align: center;
+	width: 125px;
+
+}
+
+.info-image {
+
+	width: 125px;
+	height: 125px;
+	border: #3882f6 solid 2px;
+	border-radius: 10px;
+	margin-bottom: 10px;
 
 }
 
